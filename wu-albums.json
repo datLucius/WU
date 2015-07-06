@@ -1,0 +1,35 @@
+[
+  {
+  "name": "Words from the Genius",
+  "year": 1991,
+  "artist": "GZA",
+  "cover": [
+      "images/gza-words.jpg"
+    ],
+  "heard": false,
+  "reviews": [],
+  "description": "A solo album from GZA, then known only as 'The Genius'. I think involvement by other Wu-Tang members is minimal to non-existent, though a 1994 reissue includes a track with RZA, 'Pass The Bone.' (DBW)"
+},
+{
+  "name": "Ooh I Love You Rakeem",
+  "year": 1991,
+  "artist": "RZA",
+  "cover": [
+      "images/loverakeem.jpg"
+    ],
+  "heard": false,
+  "reviews": [],
+  "description": "A solo album from the RZA, not a lot known about this, but established RZA as the spiritual leader of Wu-Tang"
+},
+  {
+  "name": "Enter the Wu-Tang (36 Chambers)",
+  "year": 1993,
+  "artist": "Wu-Tang Clan",
+  "cover": [
+      "images/enterWuTang.jpg"
+    ],
+  "heard": false,
+  "reviews": [],
+  "description": "At the time, when laid-back West Coast G-funk ruled, the manic energy of this release - a seemingly infinite number of different rappers pouring out hallucinatory imagery; denser backing tracks than was believed possible in the 'all samples cleared' era - was shocking. Now that the group's innovations have been refined and copied so much, the disc doesn't pack quite the same punch. There are some wonderful eerie grooves ('Wu-Tang: 7th Chamber,' 'Protect Ya Neck'), first-rate rhyming ('Method Man'), and they're just about the only hip-hop act whose between-song skits are actually funny ('Clan In Da Front'). When they get serious, they can be devastating (the nostalgic 'Can It Be All So Simple'). And with so much talent on hand, the record never has a chance to get dull: even the minor tracks hold your attention ('Wu-Tang Clan Ain't Nuthing Ta F' Wit'). (DBW)"
+}
+]

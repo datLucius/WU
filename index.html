@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="wuAlbums">
+<head>
+  <meta charset="UTF-8">
+  <title>Wu.U.</title>
+<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body ng-controller="galleryController as gallery">
+  <header> W.U.</header>
+  <div class="grad fa fa-graduation-cap"></div>
+  <div class="topCat">
+    <button type="button" class="topbtn btn btn-default">Albums</button>
+    <button type="button" class="topbtn btn btn-default">Syllabi</button>
+  </div>
+  <div class="sortBy">
+    <button type="button" class="sortbtn btn btn-default">AZ</button>
+    <button type="button" class="sortbtn btn btn-default">ARTIST</button>
+    <button type="button" class="sortbtn btn btn-default">YR</button>
+  </div>
+  <div class="gallery" ng-repeat="album in gallery.albums">
+    <div>{{album.name}}</div>
+    <album-gallery></album-gallery>
+    <album-tabs></album-tabs>
+  </div>
+  <footer></footer>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+   <script src="bower_components/underscore/underscore.js"></script>
+   <script src="bower_components/angular/angular.min.js"></script>
+  <script src="albums.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>
