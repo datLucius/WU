@@ -1,0 +1,8 @@
+<div class="topCat">
+  <button type="button" class="topbtn btn btn-default" ng-class="{ active:tab.isSet(1)}">
+    <a href ng-click="tab.setTab(1)">Albums</a></button>
+  <button type="button" class="topbtn btn btn-default" ng-class="{ active:tab.isSet(2)}">
+    <a href ng-click="tab.setTab(2)">Syllabi</a></button>
+</div>
+<album-view ng-show="tab.isSet(1)"></album-view>
+<syllabi-view ng-show="tab.isSet(2)"></syllabi-view>

@@ -6,21 +6,23 @@
 <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
+<link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body ng-controller="galleryController as gallery">
-  <header> W.U.</header>
+  <header> <img src='wu-tang-symbol.png' class="wuSymbol">.U.</header>
   <div class="grad fa fa-graduation-cap"></div>
   <div class="topCat">
-    <button type="button" class="topbtn btn btn-default">Albums</button>
-    <button type="button" class="topbtn btn btn-default">Syllabi</button>
+    <button type="button" class="topbtn btn btn-default wuBtn">Albums</button>
+    <button type="button" class="topbtn btn btn-default wuBtn">Syllabi</button>
   </div>
-  <div class="sortBy">
-    <button type="button" class="sortbtn btn btn-default">AZ</button>
-    <button type="button" class="sortbtn btn btn-default">ARTIST</button>
-    <button type="button" class="sortbtn btn btn-default">YR</button>
+  <album-view ng-show="tab.isSet(1)"></album-view>
+  <syllabi-view ng-show="tab.isSet(2)"></syllabi-view>
+  <div class="searchBy">
+    <input ng-model="searchText" type="text" class="searchInput" placeholder="search..">
   </div>
-  <div class="gallery" ng-repeat="album in gallery.albums">
-    <div>{{album.name}}</div>
+  <div class="gallery" ng-repeat="album in gallery.albums | filter:searchText">
+    <div class="albumName">{{album.name}}</div>
     <album-gallery></album-gallery>
     <album-tabs></album-tabs>
   </div>
@@ -28,8 +30,9 @@
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
    <script src="bower_components/underscore/underscore.js"></script>
-   <script src="bower_components/angular/angular.min.js"></script>
-  <script src="albums.js"></script>
+   <script src="bower_components/angular/angular.js"></script>
+   <script src="albums.js"></script>
+   <script src="nav.js"></script>
    <script src="app.js"></script>
 </body>
 </html>
