@@ -1,0 +1,10 @@
+<div ng-controller="albumGalleryController as gallery">
+  <div class="searchBy">
+    <input ng-model="searchText" type="text" class="searchInput" placeholder="search that shit, homie..">
+  </div>
+  <div class="gallery" ng-repeat="album in gallery.albums | filter:searchText">
+    <div class="albumName">{{album.name}}</div>
+    <album-gallery></album-gallery>
+    <album-tabs></album-tabs>
+  </div>
+</div>

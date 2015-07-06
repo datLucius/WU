@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('nav-directives', []);
+    var app = angular.module('Wutang');
 
     app.directive("navigateTabs", function() {
       return {

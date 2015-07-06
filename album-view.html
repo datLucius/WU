@@ -1,9 +1,0 @@
-<div class="searchBy">
-  <input ng-model="searchText" type="text" class="searchInput" placeholder="search..">
-</div>
-<div class="gallery" ng-repeat="album in gallery.albums | filter:searchText">
-  <div>{{album.name}}</div>
-  <album-gallery></album-gallery>
-  <album-tabs></album-tabs>
-</div>
-<footer></footer>

@@ -5,12 +5,19 @@
   font-family: serif;
   font-family: 'Droid Sans', sans-serif;
 }
+body {
+  background: url(oldirty.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 header {
   height: 100px;
   width: 100%;
   background-color: #FFD11C;
-  color: #1B1A18;
+  color: black;
   font-size: 5em;
   text-align: center;
   line-height: 100px;
@@ -57,8 +64,15 @@ header {
   width: 80%;
   overflow: scroll;
   margin: 0 auto;
+  background-color: rgba(255, 209, 28, 0.8);
 }
-
+.center{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.nav-pills>li>a{color:#fff;background-color:black}
+.nav-pills>li.active>a:hover{color:#fff;background-color:black}
 .grad {
   height: 40px;
   width: 40px;

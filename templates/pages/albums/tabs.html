@@ -1,5 +1,5 @@
 <section>
-  <ul class="nav nav-pills">
+  <ul class="nav nav-pills center">
     <li ng-class="{ active:tab.isSet(1)}">
       <a href ng-click="tab.setTab(1)"> Description</a>
     </li>
@@ -16,12 +16,12 @@
   </ul>
 
   <!--  Description Tab's Content  -->
-  <album-description ng-show="tab.isSet(1)" ></album-description>
+  <album-description ng-show="tab.isSet(1)" ></description>
 
   <!--  Spec Tab's Content  -->
-  <div album-specs ng-show="tab.isSet(2)"></div>
+  <album-specs ng-show="tab.isSet(2)"></specs>
 
   <!--  Review Tab's Content  -->
-  <album-reviews ng-show="tab.isSet(3)"></album-reviews>
+  <album-reviews ng-show="tab.isSet(3)"></reviews>
 
 </section>

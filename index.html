@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="wuAlbums">
+<html lang="en" ng-app="Wutang">
 <head>
   <meta charset="UTF-8">
   <title>Wu.U.</title>
-<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="main.css">
-<link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Graduate' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body ng-controller="galleryController as gallery">
-  <header> <img src='wu-tang-symbol.png' class="wuSymbol">.U.</header>
+<body>
+  <header><img src='images/wu-tang-symbol.png' class="wuSymbol">.U.
+  </header>
   <div class="grad fa fa-graduation-cap"></div>
   <div class="topCat">
-    <button type="button" class="topbtn btn btn-default wuBtn">Albums</button>
-    <button type="button" class="topbtn btn btn-default wuBtn">Syllabi</button>
+    <button type="button" class="topbtn btn btn-default wuBtn" ng-href='#/albums'>Albums</button>
+    <button type="button" class="topbtn btn btn-default wuBtn" ng-href='#/syllabi'>Syllabi</button>
   </div>
-  <album-view ng-show="tab.isSet(1)"></album-view>
-  <syllabi-view ng-show="tab.isSet(2)"></syllabi-view>
-  <div class="searchBy">
-    <input ng-model="searchText" type="text" class="searchInput" placeholder="search..">
+  <div class="main-wrapper">
+    <div ng-view></div>
   </div>
-  <div class="gallery" ng-repeat="album in gallery.albums | filter:searchText">
-    <div class="albumName">{{album.name}}</div>
-    <album-gallery></album-gallery>
-    <album-tabs></album-tabs>
-  </div>
-  <footer></footer>
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
    <script src="bower_components/underscore/underscore.js"></script>
    <script src="bower_components/angular/angular.js"></script>
-   <script src="albums.js"></script>
-   <script src="nav.js"></script>
-   <script src="app.js"></script>
+   <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="JS/app.js"></script>
+   <script src="JS/albums.js"></script>
+   <script src="JS/controllers/album-gallery-controller.js"></script>
+
 </body>
 </html>
